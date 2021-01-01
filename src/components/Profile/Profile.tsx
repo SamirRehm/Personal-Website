@@ -1,5 +1,8 @@
 import { Typography } from "@material-ui/core";
 import React from "react";
+import CustomTimeline from "../Timeline/Timeline";
+
+import "./Profile.css";
 
 const Profile = () => {
   return (
@@ -10,11 +13,14 @@ const Profile = () => {
       </div>
 
       <figure className="profile_image">
-        <img src="" alt="" />
+        <img
+          src={require("../../assets/images/Rehmtulla_S.jpg").default}
+          alt=""
+        />
       </figure>
 
       <div className="profile_information">
-        Insert Timeline
+        <CustomTimeline title="Work" children="" icon="" />
         <br />
         <button>My button</button>
       </div>
