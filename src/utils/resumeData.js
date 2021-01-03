@@ -11,6 +11,9 @@ export default {
   email: "srehmt@gmail.com",
   phone: "226-792-3535",
 
+  about:
+    "I'm a software engineer based out of Chilliwack, British Columbia, Canada. My main interests in software development are distributed systems and concurrency control. ",
+
   socials: {
     facebook: {
       link: "https://www.facebook.com/samir.rehmtulla",

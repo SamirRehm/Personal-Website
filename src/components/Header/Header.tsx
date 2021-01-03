@@ -1,22 +1,10 @@
 import React, { Component } from "react";
-import {
-  Button,
-  Form,
-  FormControl,
-  Nav,
-  Navbar,
-  NavDropdown,
-} from "react-bootstrap";
+import { Nav, Navbar } from "react-bootstrap";
 import { SvgIcon } from "@material-ui/core";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import {
-  Link,
-  NavLink,
-  withRouter,
-  RouteComponentProps,
-} from "react-router-dom";
+import { NavLink, withRouter, RouteComponentProps } from "react-router-dom";
 import { HomeRounded, Telegram } from "@material-ui/icons";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
@@ -32,7 +20,7 @@ type social = {
   text: string;
   icon: typeof SvgIcon;
 };
-
+/** Make the header bar sticky */
 class Header extends Component<HeaderProps> {
   render() {
     let scores: { [key: string]: social } = {
@@ -80,7 +68,9 @@ class Header extends Component<HeaderProps> {
             <Nav.Link
               as={NavLink}
               to="/"
-              className={pathName == "/" ? "header_link_active" : "header_link"}
+              className={
+                pathName === "/" ? "header_link_active" : "header_link"
+              }
             >
               RESUME
             </Nav.Link>
@@ -89,7 +79,7 @@ class Header extends Component<HeaderProps> {
               as={NavLink}
               to="/portfolio"
               className={
-                pathName == "/portfolio" ? "header_link_active" : "header_link"
+                pathName === "/portfolio" ? "header_link_active" : "header_link"
               }
             >
               PORTFOLIO
