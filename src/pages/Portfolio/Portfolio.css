@@ -27,9 +27,9 @@
   }
 
 .project_dialog .project_dialog_image {
-  max-height: 300px;
+  max-height: 625px;
   width: 100%;
-  object-fit: cover;
+  object-fit:contain;
   object-position: center center;
 }
 
