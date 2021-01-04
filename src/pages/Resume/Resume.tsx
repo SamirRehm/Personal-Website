@@ -1,10 +1,9 @@
-import { Grid, Paper, SvgIcon, Typography } from "@material-ui/core";
+import { Grid, Paper, Typography } from "@material-ui/core";
 import React from "react";
-import CustomTimeline, {
-  CustomTimelineSeparator,
-} from "../../components/Timeline/Timeline";
+import CustomTimeline from "../../components/Timeline/Timeline";
 import resumeData from "../../utils/resumeData";
 import "./Resume.css";
+import Icon from "@material-ui/core/Icon";
 import WorkIcon from "@material-ui/icons/Work";
 import TimelineItem from "@material-ui/lab/TimelineItem";
 import TimelineSeparator from "@material-ui/lab/TimelineSeparator";
@@ -12,7 +11,6 @@ import TimelineDot from "@material-ui/lab/TimelineDot";
 import TimelineConnector from "@material-ui/lab/TimelineConnector";
 import TimelineContent from "@material-ui/lab/TimelineContent";
 import SchoolIcon from "@material-ui/icons/School";
-import WebOutlined from "@material-ui/icons/WebOutlined";
 
 type experience = {
   title: string;
@@ -23,7 +21,7 @@ type experience = {
 type service = {
   title: string;
   description: string;
-  icon: typeof SvgIcon;
+  icon: string;
 };
 
 type skill = {
@@ -38,7 +36,8 @@ const Resume = () => {
   };
 
   const passIn2 = {
-    title: "Education",
+    title:
+      "Education - UWaterloo, Bachelor of Software Engineering - GPA: 94.39",
     icon: SchoolIcon,
   };
 
@@ -52,21 +51,59 @@ const Resume = () => {
     {
       title: "Safe Software",
       date: "January - April 2020",
-      description: "dfdfdf hi hi hi hi hi hi hi hi hi hi hihihi",
+      description:
+        "Implemented performant readers and writers to add read and write support to the Feature Manipulation Engine (FME) for Microsoft DirectDraw Surface (DDS) and Mapbox Vector Tile (MVT) file formats.",
+    },
+    {
+      title: "Wish",
+      date: "May - August 2019",
+      description:
+        "Designed and implemented a 3-step (TF-IDF, Gradient Boosting, Logistic Regression) machine learning pipeline to classify misleading products on the platform. Also migrated the company's main analytics dashboard from Looker to Tableau.",
+    },
+    {
+      title: "Kik",
+      date: "September - December 2018",
+      description:
+        "Built a Spark gradient-boosted tree model to flag spam users in real-time, seconds after account creation. Designed a hyperparameter tuning framework for existing models and set up SQL-driven dashboards.",
+    },
+    {
+      title: "RocScience",
+      date: "January - April 2018",
+      description:
+        "Implemented automatic surface parameterization of arbitrary 3D tunnel mesh geometries to allow clients to apply boundary conditions at discrete intervals on tunnel models.",
+    },
+    {
+      title: "Loblaw Digital",
+      date: "May - August 2017",
+      description:
+        'Implemented backend endpoints for new "Store Locator" page with automated tests, mocking necessary web services',
     },
   ];
 
   const education: experience[] = [
     {
-      title: "Work 1",
-      date: "2018 - 2020",
+      title: "Fourth year",
+      date: "May 2020 - April 2021",
       description:
-        "dfdfdf hi hi hi hi hi hi hi hi hi hi hihihi hi hi hi hi hi hi hi hi hi hi hihihi hi hi hi hi hi hi hi hi hi hi hihihi hi hi hi hi hi hi hi hi hi hi hihihi",
+        "Relevant courses: ECE 459 (Programming for Performance), CS 486 (Artificial Intelligence), SE 491 (Design Project II), ECE 454 (Distributed Computing), CS 458 (Computer Security and Privacy), ECE 358 (Networks)",
     },
     {
-      title: "Work 2",
-      date: "2018 - 2020",
-      description: "dfdfdf hi hi hi hi hi hi hi hi hi hi hihihi",
+      title: "Third year",
+      date: "January - December 2019",
+      description:
+        "Relevant courses: CS 343 (Concurrent and Parallel Programming), CS 348 (Databases), SE 380 (Feedback Control), SE 464 (Software Architecture), CS 341 (Algorithms), CS 349 (User Interfaces), SE 350 (Operating Systems), SE 465 (Testing)",
+    },
+    {
+      title: "Second year",
+      date: "September 2017 - August 2018",
+      description:
+        "Relevant courses: CS 240 (Data Structures), CS 247 (Software Engineering), MATH 239 (Combinatorics), CS 241 (Compilers), ECE 222 (Digital Computers), SE 212 (Logic)",
+    },
+    {
+      title: "First year",
+      date: "September 2016 - April 2017",
+      description:
+        "Relevant courses: CS 137 (Programming Principles), CS 138 (Data structures and Abstraction), MATH 135 (Proofs), ECE 105/106 (Electrical Engineering Physics), MATH 117/119 (Engineering Calculus)",
     },
   ];
 
@@ -74,25 +111,66 @@ const Resume = () => {
     {
       title: "Distributed Computing",
       description:
-        "I have worked in a distributed computing role at Snowflake. I have also taken post-secondary coursework in distributed systems.",
-      icon: WebOutlined,
+        "I worked in a distributed computing role at Snowflake. I have also completed coursework in distributed systems.",
+      icon: "/2301714-200.svg",
     },
     {
-      title: "Machine Learning and Data Science",
+      title: "ML and Data Science",
       description:
-        "I have worked in a distributed computing role at Snowflake. I have also taken post-secondary coursework in distributed systems.",
-      icon: WebOutlined,
+        "I have completed multiple data science internships and have pursued independent studies in machine learning.",
+      icon: "/data.svg",
+    },
+    {
+      title: "Backend development",
+      description:
+        "I'm familiar with many backend frameworks and languages and I wrote the backend for gosudoku.io",
+      icon: "/2166796.svg",
     },
   ];
 
   const skills: skill[] = [
     {
       title: "Languages",
-      description: ["python", "java"],
+      description: [
+        "Java",
+        "Python",
+        "C++",
+        "C",
+        "R",
+        "C#",
+        "Scala",
+        "Go",
+        "HTML/CSS",
+        "TypeScript",
+      ],
     },
     {
-      title: "Technologies",
-      description: ["Git", "IntelliJ"],
+      title: "Frameworks and Libraries",
+      description: [
+        "Java Concurrency",
+        "Apache Thrift",
+        "Hadoop",
+        "Apache Zookeeper",
+        "Tensorflow and Keras",
+        "OpenCV",
+        "Sci-kit Learn",
+        "Flask",
+        "ReactJS",
+        "Node.js",
+      ],
+    },
+    {
+      title: "Tools and Technologies",
+      description: [
+        "Git",
+        "SQL",
+        "IntelliJ",
+        "Pycharm",
+        "CLion",
+        "Visual Studio",
+        "RStudio",
+        "MongoDB",
+      ],
     },
   ];
 
@@ -185,15 +263,17 @@ const Resume = () => {
       <Grid container className="section pb_45">
         <Grid item className="section_title mb_30">
           <span></span>
-          <h6 className="section_title_text">Services</h6>
+          <h6 className="section_title_text">Skills</h6>
         </Grid>
 
         <Grid item xs={12}>
           <Grid container spacing={3} justify="space-around">
             {services.map((serv) => (
-              <Grid item xs={12} sm={6} md={3}>
+              <Grid item xs={12} sm={6} md={4}>
                 <div className="service">
-                  <SvgIcon className="service_icon" component={serv.icon} />
+                  <Icon>
+                    <img className="service_icon" src={serv.icon} />
+                  </Icon>
                   <Typography className="service_title" variant="h6">
                     {serv.title}
                   </Typography>
@@ -211,7 +291,7 @@ const Resume = () => {
         <Grid item xs={12}>
           <Grid container spacing={3} justify="space-between">
             {skills.map((ski) => (
-              <Grid item xs={12} sm={6} md={3}>
+              <Grid item xs={12} sm={6} md={4}>
                 <Paper elevation={0} className="skill">
                   <Typography variant="h6" className="skill_title">
                     {ski.title}

@@ -5,11 +5,10 @@ import { SvgIcon } from "@material-ui/core";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { NavLink, withRouter, RouteComponentProps } from "react-router-dom";
-import { HomeRounded, Telegram } from "@material-ui/icons";
+import { HomeRounded } from "@material-ui/icons";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import CustomButton from "../Button/Button";
 
 import "./Header.css";
 
@@ -47,11 +46,6 @@ class Header extends Component<HeaderProps> {
       </a>
     ));
 
-    const passInButton = {
-      text: "Hire Me",
-      icon: Telegram,
-    };
-
     const pathName = this.props?.location?.pathname;
     return (
       <Navbar expand="lg" className="header">
@@ -85,9 +79,7 @@ class Header extends Component<HeaderProps> {
               PORTFOLIO
             </Nav.Link>
           </Nav>
-          <div className="header_right">
-            {y} <CustomButton value={passInButton}></CustomButton>
-          </div>
+          <div className="header_right">{y}</div>
         </Navbar.Collapse>
       </Navbar>
     );

@@ -20,6 +20,12 @@
   font-weight: 400;
 }
 
+.project_dialog .project_dialog_title {
+    margin-top: 10px !important;
+    text-align: center !important;
+    font-weight: bold !important;
+  }
+
 .project_dialog .project_dialog_image {
   max-height: 300px;
   width: 100%;
@@ -29,6 +35,7 @@
 
 .project_dialog .project_dialog_description {
   margin-top: 10px !important;
+  text-align: center !important;
 }
 
 .project_dialog .project_dialog_actions {
@@ -43,7 +50,7 @@
 }
 
 .project_dialog .project_dialog_icon :hover {
-    font-size: 30px !important;
+    color: var(--main-color) !important;
 }
 
 .project_dialog .project_dialog_icon > .MuiSvgIcon-root {

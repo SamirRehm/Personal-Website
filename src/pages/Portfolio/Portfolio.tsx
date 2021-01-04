@@ -34,18 +34,27 @@ const Portfolio = () => {
     {
       image:
         "https://globetrender.com/wp-content/uploads/2020/05/Caribbean-beach.jpg",
-      title: "Project 1",
-      caption: "Short caption",
+      title: "GoSudoku",
+      caption: "The ultimate online, multiplayer Sudoku experience",
       description:
-        "This is a project hi hi hi hi hi hi hi hi h ih ih ih ihi hi h i",
+        "GoSudoku is a fully-fledged web application for online multiplayer collaborative Sudoku. The application is written using React, Material UI, Redux and Typescript on the front-end, and Python Flask on the backend with a MongoDB database. The application supports single and multiplayer modes, a full authentication system and a friends system.",
       links: [{ link: "https://www.google.com", icon: GitHubIcon }],
     },
     {
       image:
         "https://globetrender.com/wp-content/uploads/2020/05/Caribbean-beach.jpg",
-      caption: "Short caption",
-      title: "Project 2",
-      description: "This is a project",
+      caption: "A tilt-based maze game programmed on a Ti Microcontroller",
+      title: "Tilt Maze",
+      description:
+        "This was my first term software engineering project at Waterloo. We were to implement a project that interfaced with a Ti microcontroller with an Orbit Booster Pack. I leveraged the accelerometer in the Orbit to implement a tilt-based maze game, where a user guides a ball through a base. The maze is generated using the recursive division algorithm.",
+      links: [{ link: "https://www.google.com", icon: GitHubIcon }],
+    },
+    {
+      image:
+        "https://globetrender.com/wp-content/uploads/2020/05/Caribbean-beach.jpg",
+      caption: "A maze generation and pathfinding visualizer",
+      title: "Maze generation and pathfinding",
+      description: "A maze generation and pathfinding visualizer",
       links: [{ link: "https://www.google.com", icon: GitHubIcon }],
     },
   ];
@@ -99,7 +108,9 @@ const Portfolio = () => {
         onClose={() => setProjectDialog(null)}
         className="project_dialog"
       >
-        <DialogTitle>{projectDialog?.title}</DialogTitle>
+        <DialogTitle className="project_dialog_title">
+          {projectDialog?.title}
+        </DialogTitle>
         <img
           src={projectDialog?.image}
           alt=""
