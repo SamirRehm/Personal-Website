@@ -1,0 +1,51 @@
+.custom_card {
+  height: 100%;
+  max-width: 350px;
+  box-shadow: 0px 0px 48px 0px rgba(4, 6, 4, 0.2) !important;
+  border-radius: 5px;
+  overflow: hidden;
+  outline-width: 0px !important;
+}
+
+.custom_card .custom_card_image {
+  height: 140px;
+}
+
+.custom_card .custom_card_title {
+  font-weight: 600;
+}
+
+.custom_card .custom_card_caption {
+  color: gray;
+  font-weight: 400;
+}
+
+.project_dialog .project_dialog_image {
+  max-height: 300px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.project_dialog .project_dialog_description {
+  margin-top: 10px !important;
+}
+
+.project_dialog .project_dialog_actions {
+  justify-content: center !important;
+  margin-bottom: 10px;
+}
+
+.project_dialog .project_dialog_icon {
+  color: darkslategray;
+  margin: 0px 12px;
+  cursor: pointer;
+}
+
+.project_dialog .project_dialog_icon :hover {
+    font-size: 30px !important;
+}
+
+.project_dialog .project_dialog_icon > .MuiSvgIcon-root {
+    font-size: 30px !important;
+}
