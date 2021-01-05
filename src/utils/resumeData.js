@@ -12,7 +12,7 @@ export default {
   phone: "226-792-3535",
 
   about:
-    " Hi! My name is Samir, and I'm a Software Engineering student set to graduate in April 2021 from the University of Waterloo. I've grown up in Chilliwack, Western Canada, before flying east to attend Waterloo. In 2021, I will be returning to the west coast as a full time engineer with Snowflake. In my spare time, I enjoy programming, piano, soccer, tennis, table tennis and I also ran cross-country for Waterloo's team. Please feel free to contact me regarding anything from hobbies to jobs to projects to education!",
+    " Hi! My name is Samir, and I'm a Software Engineering student set to graduate in April 2021 from the University of Waterloo. I've grown up in Chilliwack, Western Canada, before flying east to attend Waterloo. In my spare time, I enjoy programming, piano, soccer, tennis, table tennis and I also ran cross-country for Waterloo's team. Please feel free to contact me regarding anything from sports to jobs to projects to education!",
 
   socials: {
     facebook: {

@@ -30,9 +30,7 @@ class CustomTimeline extends Component<TimelineProps> {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent>
-            <Typography variant="h6" className={"timeline_header"}>
-              {value.title}
-            </Typography>
+            <Typography className={"timeline_header"}>{value.title}</Typography>
           </TimelineContent>
         </TimelineItem>
         {this.props.children}

@@ -7,6 +7,7 @@ type ButtonProps = {
   value: {
     text: string;
     icon: typeof SvgIcon;
+    target: string;
   };
 };
 
@@ -14,7 +15,7 @@ class CustomButton extends Component<ButtonProps> {
   render() {
     const { value } = this.props;
     return (
-      <a href="/resume.pdf" target="_blank">
+      <a href={value.target} target="_blank">
         <Button
           className="custom_btn"
           endIcon={

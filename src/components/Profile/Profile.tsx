@@ -55,8 +55,19 @@ const Profile = () => {
   };
 
   const passInButton = {
-    text: "Download CV",
+    text: "Resume",
     icon: GetAppIcon,
+    target: "/resume.pdf",
+  };
+  const passInButton2 = {
+    text: "Transcript",
+    icon: GetAppIcon,
+    target: "/Transcript.pdf",
+  };
+  const passInButton3 = {
+    text: "Coop Performance",
+    icon: GetAppIcon,
+    target: "/WTR.pdf",
   };
 
   let scores: { [key: string]: social } = {
@@ -113,6 +124,12 @@ const Profile = () => {
         </CustomTimeline>
         <div className="button_container">
           <CustomButton value={passInButton} />
+        </div>
+        <div className="button_container">
+          <CustomButton value={passInButton2} />
+        </div>
+        <div className="button_container">
+          <CustomButton value={passInButton3} />
         </div>
       </div>
     </div>
