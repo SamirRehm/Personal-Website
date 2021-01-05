@@ -110,7 +110,12 @@ const Portfolio = () => {
       title: "Training Dashboard",
       description:
         "This web application was written entirely in R using plotly and the Shiny framework. It uses the Strava API to get running and exercise data for a user and yields informative charts in a dashboard. The activity stats section allows for more in depth statistics about a specific run/activity including pace, distance, interval paces, and GPS raw data. The app no longer works due to some Strava API changes, may refactor it and republish it online.",
-      links: [{ link: "https://www.google.com", icon: GitHubIcon }],
+      links: [
+        {
+          link: "https://github.com/SamirRehm/Training-Dashboard",
+          icon: GitHubIcon,
+        },
+      ],
     },
     {
       image: require("../../assets/images/Graph.PNG").default,
@@ -143,7 +148,7 @@ const Portfolio = () => {
     <Grid container className="section pb_45 pt_37">
       <Grid item className="section_title mb_30">
         <span></span>
-        <h6 className="section_title_text">Portfolio</h6>
+        <h6 className="section_title_text">Projects</h6>
       </Grid>
       <Grid item xs={12}>
         <Grid container spacing={3}>

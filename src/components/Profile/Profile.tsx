@@ -57,20 +57,24 @@ const Profile = () => {
   const passInButton = {
     text: "Resume",
     icon: GetAppIcon,
-    target: "/resume.pdf",
+    target: require("../../assets/images/resume.pdf").default,
   };
   const passInButton2 = {
     text: "Transcript",
     icon: GetAppIcon,
-    target: "/Transcript.pdf",
+    target: require("../../assets/images/Transcript.pdf").default,
   };
   const passInButton3 = {
     text: "Coop Performance",
     icon: GetAppIcon,
-    target: "/WTR.pdf",
+    target: require("../../assets/images/WTR.pdf").default,
   };
 
   let scores: { [key: string]: social } = {
+    Email: {
+      text: "srehmt@gmail.com",
+      link: "mailto:srehmt@gmail.com",
+    },
     Facebook: {
       text: "samir.rehmtulla",
       link: "https://www.facebook.com/samir.rehmtulla",
@@ -115,10 +119,6 @@ const Profile = () => {
           <CustomTimelineItem
             title="Title"
             text={resumeData.title}
-          ></CustomTimelineItem>
-          <CustomTimelineItem
-            title="Email"
-            text={resumeData.email}
           ></CustomTimelineItem>
           {y}
         </CustomTimeline>

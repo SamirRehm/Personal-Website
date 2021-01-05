@@ -76,7 +76,7 @@ class Header extends Component<HeaderProps> {
                 pathName === "/portfolio" ? "header_link_active" : "header_link"
               }
             >
-              PORTFOLIO
+              PROJECTS
             </Nav.Link>
           </Nav>
           <div className="header_right">{y}</div>
