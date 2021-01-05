@@ -112,19 +112,19 @@ const Resume = () => {
       title: "Distributed Computing",
       description:
         "I worked in a distributed computing role at Snowflake. I have also completed coursework in distributed systems.",
-      icon: "/2301714-200.svg",
+      icon: require("../../assets/images/2301714-200.svg").default,
     },
     {
       title: "ML and Data Science",
       description:
         "I have completed multiple data science internships and have pursued independent studies in machine learning.",
-      icon: "/data.svg",
+      icon: require("../../assets/images/data.svg").default,
     },
     {
       title: "Backend development",
       description:
         "I'm familiar with many backend frameworks and languages and I wrote the backend for gosudoku.io",
-      icon: "/2166796.svg",
+      icon: require("../../assets/images/2166796.svg").default,
     },
   ];
 

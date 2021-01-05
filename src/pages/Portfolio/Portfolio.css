@@ -21,26 +21,28 @@
 }
 
 .project_dialog .project_dialog_title {
-    margin-top: 10px !important;
+    margin-top: 7px !important;
     text-align: center !important;
     font-weight: bold !important;
   }
 
 .project_dialog .project_dialog_image {
-  max-height: 625px;
+  max-height: 400px;
   width: 100%;
   object-fit:contain;
   object-position: center center;
 }
 
 .project_dialog .project_dialog_description {
-  margin-top: 10px !important;
+  margin-top: 7px !important;
+  font-size: 12px;
   text-align: center !important;
+  min-height: fit-content;
 }
 
 .project_dialog .project_dialog_actions {
   justify-content: center !important;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 }
 
 .project_dialog .project_dialog_icon {
