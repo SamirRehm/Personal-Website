@@ -44,37 +44,37 @@ const Resume = () => {
   const workExperience: experience[] = [
     {
       title: "Snowflake Computing",
-      date: "September - December 2020",
+      date: "Sept - Dec 2020 | Software Engineering Intern",
       description:
         "Drafted, designed, implemented, tested and monitored a throttling layer that balances user workload isolation with cost-efficient multitenant resource scheduling.",
     },
     {
       title: "Safe Software",
-      date: "January - April 2020",
+      date: "Jan - Apr 2020 | C++ Development Intern",
       description:
         "Implemented performant readers and writers to add read and write support to the Feature Manipulation Engine (FME) for Microsoft DirectDraw Surface (DDS) and Mapbox Vector Tile (MVT) file formats.",
     },
     {
       title: "Wish",
-      date: "May - August 2019",
+      date: "May - Aug 2019 | Software Engineering Analytics Intern",
       description:
         "Designed and implemented a 3-step (TF-IDF, Gradient Boosting, Logistic Regression) machine learning pipeline to classify misleading products on the platform. Also migrated the company's main analytics dashboard from Looker to Tableau.",
     },
     {
       title: "Kik",
-      date: "September - December 2018",
+      date: "Sept - Dec 2018 | Data Science Intern",
       description:
         "Built a Spark gradient-boosted tree model to flag spam users in real-time, seconds after account creation. Designed a hyperparameter tuning framework for existing models and set up SQL-driven dashboards.",
     },
     {
       title: "RocScience",
-      date: "January - April 2018",
+      date: "Jan - Apr 2018 | C# Development Intern",
       description:
         "Implemented automatic surface parameterization of arbitrary 3D tunnel mesh geometries to allow clients to apply boundary conditions at discrete intervals on tunnel models.",
     },
     {
       title: "Loblaw Digital",
-      date: "May - August 2017",
+      date: "May - Aug 2017 | Software Engineering (Backend) Intern",
       description:
         'Implemented backend endpoints for new "Store Locator" page with automated tests, mocking necessary web services',
     },
@@ -83,25 +83,25 @@ const Resume = () => {
   const education: experience[] = [
     {
       title: "Fourth year",
-      date: "May 2020 - April 2021",
+      date: "May 2020 - Apr 2021",
       description:
         "Relevant courses: ECE 459 (Programming for Performance), CS 486 (Artificial Intelligence), SE 491 (Design Project II), ECE 454 (Distributed Computing), CS 458 (Computer Security and Privacy), ECE 358 (Networks)",
     },
     {
       title: "Third year",
-      date: "January - December 2019",
+      date: "Jan - Dec 2019",
       description:
         "Relevant courses: CS 343 (Concurrent and Parallel Programming), CS 348 (Databases), SE 380 (Feedback Control), SE 464 (Software Architecture), CS 341 (Algorithms), CS 349 (User Interfaces), SE 350 (Operating Systems), SE 465 (Testing)",
     },
     {
       title: "Second year",
-      date: "September 2017 - August 2018",
+      date: "Sept 2017 - Aug 2018",
       description:
         "Relevant courses: CS 240 (Data Structures), CS 247 (Software Engineering), MATH 239 (Combinatorics), CS 241 (Compilers), ECE 222 (Digital Computers), SE 212 (Logic)",
     },
     {
       title: "First year",
-      date: "September 2016 - April 2017",
+      date: "Sept 2016 - Apr 2017",
       description:
         "Relevant courses: CS 137 (Programming Principles), CS 138 (Data structures and Abstraction), MATH 135 (Proofs), ECE 105/106 (Electrical Engineering Physics), MATH 117/119 (Engineering Calculus)",
     },
